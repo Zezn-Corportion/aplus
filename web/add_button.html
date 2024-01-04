@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>عرض الازرار في صفحة الويب</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية عرض الازرار  في الصفحة</p>
+            
+            <br>
+
+            <H1>الدالة اضافة_زر</H1>
+            <P> تستخدم لعرض زر في الصفحة ويمكن تخصيص له دالة يتم تنفيذها عند ضغطه ويمكن ان تكون هذه الدالة دالة عربي بلس او دالة جافا سكريبت</P>
+            <pre><code class="code">انشاء_دالة_باسم الرئيسية() :
+    اضافة_زر(النص = "اضغطني")</code></pre>
+
+            <br>
+            <br>
+
+            <h1>تحديد خواص الزر ووظائفه</h1>
+
+            <br>
+
+            <h2>جافا_سكريبت</h2>
+            <p>تستخدم لتخصيص كود جافا سكريبت يتم تنفيذه عند النقر على الزر</p>
+            <pre><code class="code">اضافة_زر(النص = "اضغطني" , جافا_سكريبت = "alert('hi')")</code></pre>
+
+            <BR>
+            
+            <h2>الحدث</h2>
+            <p>في حالة كنت تريد تنفيذ دالة عربي بلس معينة عندما يقوم المستخدم بالنقر على الزر نستخدم هذا المدخل 
+                لتحديد الدالة التي سيتم تنفيذها عند النقر
+            </p>
+            <pre><code class="code">انشاء_دالة_باسم عند_النقر() :
+                اضافة_نص("تم النقر على الزر")
+اضافة_زر(النص = "اضغط هنا" , الحدث = عند_النقر)</code></pre>
+            <p>طبعا يجب ان تكون الدالة المراد تنفيذها عند النقر على الزر لا تاخذ اي متغيرات ويجب عند تحديد الدالة كتابة اسمها بدون اقواس او علامات تنصيص</p>
+            
+            <BR>
+
+            <h2>المظهر</h2>
+            <p>يستخدم هذا المدخل لتحديد خواص سي اس اس يتم تطبيقها على الزر</p>
+            <pre><code class="code">اضافة_زر(النص = "اضغطني" , المظهر = "cursor:arrow;")</code></pre>
+
+            <br>
+
+            <h2>لون_الخلفية</h2>
+            <p>يستخدم لتحديد لون خلفية الزر باستخدام نظام الوان A++ </p>
+
+            <br>
+
+            <h2>الاتجاه</h2>
+            <p>يستخدم للتحكم في اتجاه عرض الصورة (يمين و منتصف و يسار)</p>
+
+
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

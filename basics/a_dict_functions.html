@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>دوال القواميس</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+        
+            <p style="margin-right: 0;">نتحدث اليوم عن الدوال التي تستخدم مع القواميس وهي كالاتي : </p>
+            
+            <br>
+            
+            <h2>احضار_قيمة_من_قاموس</h2>
+            <p>تستخدم هذه الدالة لجلب قيمة مفتاح من القاموس - سبق ان تحدثنا عن المفاتيح والقيم في القاموس في درس <a href="a_variables.html#dict">المتغيرات</a></p>
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب(  احضار_قيمة_من_قاموس(س , "apple"))</code></pre>
+            <p>يمكن عمل نفس المثال السابق بالطريقة التالية</p>
+                        <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب( س ["apple"])</code></pre>
+
+            <br>
+
+            <h2>جلب_مفاتيح_القاموس</h2>
+            <p>هذه الدالة تعيد لنا قائمة بجميع اسماء المفاتيح الموجودة ضمن القاموس - اسماء المفاتيح فقط بدون قيمها - :</p>
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب( جلب_مفاتيح_القاموس(س))</code></pre> 
+            <p>سيتم كتابة ["apple" , "orange"]</p>
+
+            <br>
+
+            <h2>جلب_قيم_القاموس</h2>
+            <p>هذه الدالة تعيد لنا قيم المفاتيح الموجودة في قاموس معين - تعيد قيم فقط بدون اسماء مفاتيح : </p>
+            
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب( جلب_قيم_القاموس(س))</code></pre>
+
+            <p>سيتم كتابة ["تفاح" , "برتقال"]</p>
+
+            <br>
+
+            <h2>حذف_من_القاموس</h2>
+            <p>تستخدم هذه الدالة لحذف مفتاح بقيمته من قاموس معين ، مثال : </p>
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب( حذف_من_القاموس(س , "apple"))</code></pre>
+            <p>سيتم كتابة {"orange" : "برتقال"}</p>
+
+            <br>
+
+            <h2>تمركز_القيمة_في_القاموس</h2>
+            <p>تاخذ هذه الدالة قاموس وتاخذ مفتاح وتعيد ترتيبه في القاموس - العنصر الاول , الثاني .... :</p>
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب( تمركز_القيمة_في_القاموس(س , "apple"))</code></pre>
+            <p>سيتم كتابة صفر</p>
+
+            <br>
+            <br>
+
+            <h1>استخراج قيمة من قاموس</h1>
+            <p>لاستخراج قيمة قيمة مفتاح معين من قاموس نقوم بكتابة اسم القاموس ثم قوسين يحتويان على اسم الفتاح هكذا :</p>
+            <pre><code class="code">س = {"apple" : "تفاح" , "orange" : "برتقال"}
+                
+اكتب(س ["apple"])</code></pre>
+            <p>سيتم كتابة تفاح</p>
+
+            
+            <br>
+            <br>
+
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

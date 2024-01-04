@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>عرض فيدويوهات اليوتيوب</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية اضافة فيديوهات اليوتيوب في الصفحات</p>
+            
+            <br>
+
+            <h1>الدالة اضافة_فيديو_يوتيوب</h1>
+            <p>تستخدم هذه الدالة لعرض فيديوهات اليوتيوب في الصفحة وتاخذ رابط الفيديو وتقوم بعرضه</p>
+            <pre><code class="code">اضافة_فيديو_يوتيوب(الرابط = "https://youtu.be/V7Q5-SK4fIs")</code></pre>
+            <p>وسيتم عرض الفيديو في الصفحة</p>
+
+            <br>
+            <br>
+
+            <h1>التحكم بشكل الفيديو</h1>
+
+            <h2>التحكم بالطول والعرض</h2>
+            <p>يمكن التحكم بالطول والعرض للفيديو بالشكل التالي</p>
+            <pre><code class="code">اضافة_فيديو_يوتيوب(الرابط = "https://youtu.be/V7Q5-SK4fIs" , الطول = "222بكسل" , العرض = "600بكسل")</code></pre>
+
+            <br>
+
+            <h2>تحديد خواص css للفيديو</h2>
+            <p>يمكن ذلك عن طريق المدخل المظهر بالشكل التالي </p>
+            <pre><code class="code">اضافة_فيديو_يوتيوب(الرابط = "https://youtu.be/V7Q5-SK4fIs" , المظهر = "text-align:center")</code></pre>
+
+            <br>
+
+            <h2>الحدث</h2>
+            <p>في حالة كنت تريد تنفيذ دالة معينة عندما يقوم المستخدم بالنقر على الفيديو نستخدم هذا المدخل 
+                لتحديد الدالة التي سيتم تنفيذه
+            </p>
+            <pre><code class="code">انشاء_دالة_باسم عند_النقر() :
+    اضافة_نص("تم النقر على الفيديو")
+اضافة_فيديو_يوتيوب(الرابط = "https://youtu.be/V7Q5-SK4fIs" , الحدث = عند_النقر)</code></pre>
+            <p>طبعا يجب ان تكون الدالة المراد تنفيذها عند النقر على الفيديو لا تاخذ اي متغيرات ويجب عند تحديد الدالة كتابة اسمها بدون اقواس او علامات تنصيص</p>
+            
+            <br>
+
+            <h2>الاتجاه</h2>
+            <p>تستخدم لتحديد اتجاه عرض المربع وتاخذ 3 قيم : يسار و يمين و منتصف</p>
+
+
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

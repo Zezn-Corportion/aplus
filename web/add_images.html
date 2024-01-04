@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>عرض الصور في صفحة الويب</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية عرض الصور في الصفحات</p>
+            
+            <br>
+
+            <h1>الدالة اضافة_صورة</h1>
+            <p>تستخدم الدالة السابقة لعرض صور ضمن الموقع ، هكذا</p>
+
+            <pre><code class="code">من_مكتبة الويب استدعاء * 
+هنا = __هنا__
+
+انشاء_دالة_باسم الرئيسية() :
+    اضافة_صورة(الرابط = هنا + "im.png")
+
+الصفحات = [الرئيسية]
+
+تشغيل_السيرفر(الصفحات = الصفحات , المنفذ = 1000)</code></pre>
+
+            <Br>
+            <br>
+
+            <h1>التحكم بخصائص الصورة</h1>
+            
+            <h2>الطول و العرض</h2>
+            <p>نستخدم هذان المدخلان للتحكم بالطول والعرض </p>
+            <pre><code class="code">اضافة_صورة(الرابط = هنا + "im.png" , الطول = "33سم" , العرض = "تلقائي")</code></pre>
+            <p>عندما نحدد العرض تلقائي سيتم تحديد العرض تلقائيا بما يجعل الصورة يتم عرضها بشكل صحيح ومتوافق مع الطول</p>
+            
+            <br>
+
+            <h2>الاتجاه</h2>
+            <p>يستخدم للتحكم في اتجاه عرض الصورة (يمين و منتصف و يسار ) </p>
+
+            <br>
+
+            <h2>الحدث</h2>
+            <p>في حالة كنت تريد تنفيذ دالة معينة عندما يقوم المستخدم بالنقر على الصورة نستخدم هذا المدخل 
+                لتحديد الدالة التي سيتم تنفيذها
+            </p>
+            <pre><code class="code">انشاء_دالة_باسم عند_النقر() :
+    اضافة_نص("تم النقر على الصورة")
+اضافة_صورة(الرابط = "https://example.com/i.png" , الحدث = عند_النقر)</code></pre>
+            <p>طبعا يجب ان تكون الدالة المراد تنفيذها عند النقر على الصورة لا تاخذ اي متغيرات ويجب عند تحديد الدالة كتابة اسمها بدون اقواس او علامات تنصيص</p>
+            
+            <br>
+
+            <h2>المظهر</h2>
+            <p>يستخدم هذا المدخل لتحديد خواص سي اس اس للصورة كما يحلو لك ! </p>
+            <pre><code class="code">اضافة_صورة(الرابط = هنا + "im.png" , المظهر = "margin:0.6cm;")</code></pre>
+
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

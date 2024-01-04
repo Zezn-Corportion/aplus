@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>اتصال بقواعد بيانات ماي سيكوال</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية ربط لغة عربي بلس بقواعد بيانات mysql </p>
+
+            <br>
+
+            <h1>تثبيت pymysql </h1>
+            <p>لكي تتمكن من الربط يجب تثبيت حزمة pymysql على نسخة بايثون التي تستخدمها مع عربي بلس عن طريق كتابة الامر التالي في موجه الاوامر</p>
+            <pre><code class="code" style="text-align: left;">pip install pymysql</code></pre>
+            
+            <br>
+            <br>
+
+            <h1>اتصال بقاعدة البيانات</h1>
+            <p>لفعل ذلك يجب استدعاء مكتبة قواعد البيانات التي تأتي مع لغة عربي بلس هكذا</p>
+            <pre><code class="code">من_مكتبة قواعد_البيانات استدعاء *</code></pre>
+            <p>ثم للاتصال بقاعدة بيانات ماي سيكوال نستخدم الكائن اتصال_ماي_سيكوال هكذا </p>
+            <pre><code class="code">ا = اتصال_ماي_سيكوال(السيرفر = "localhost" , اسم_المستخدم = "name" , كلمة_المرور = "" , اسم_قاعدة البيانات = "dbn")</code></pre>
+
+            <br>
+            <br>
+
+            <h1>تنفيذ استعلام : </h1>
+            <p>
+                يمكن تنفيذ الاستعلامات بالطريقة التالية
+            </p>
+            <pre><code class="code">ا = اتصال_ماي_سيكوال(السيرفر = "localhost" , اسم_المستخدم = "name" , كلمة_المرور = "" , اسم_قاعدة البيانات = "dbn")
+ا.تنفيذ("INSERT INTO users(name) VALUES ('khald')")</code></pre>
+            <p>سيتم حفظ khald في قاعدة البيانات</p>
+
+
+
+            <br>
+            <br>
+
+            <h1>جلب البيانات من القاعدة</h1>
+            <p>ان الدالة تنفيذ تعيد البيانات عند تنفيذ استعلام لجلب البيانات بالشكل التالي</p>
+            <pre><code class="code">[ [معلومات السطر الاول] , [معلومات السطر الثاني] , [الثالث ...] ]</code></pre>
+            <p>حيث تعيد قائمة بداخلها عدة قوائم ، كل قائمة داخلية تحتوي على بيانات سطر من القاعدة وتكون البيانات مرتبة بنفس 
+                ترتيب العواميد في قاعدة البيانات
+            </p>
+            <pre><code class="code">ا = اتصال_ماي_سيكوال(السيرفر = "localhost" , اسم_المستخدم = "name" , كلمة_المرور = "" , اسم_قاعدة البيانات = "dbn")
+س = ا.تنفيذ("INSERT INTO users(name) VALUES ('khald')")
+اكتب(س [0] [2])</code></pre>
+            <p>سيتم كتابة البيانات الواقعة في التمركز الثاني في اول سطر</p>
+
+            <br>
+            <br>
+
+            <h1>الدالة تصفية_الاستعلام</h1>
+            <p>هذه الدالة ضرورية جدا للحماية من ثغرة حقن قواعد البيانات , حيث تقوم بازالة الرموز الغير مرغوب فيها</p>
+            <pre><code class="code">ا.تنفيذ(تصفية_الاستعلام("هنا الاستعلام"))</code></pre>
+            
+            <br>
+            <br>
+
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

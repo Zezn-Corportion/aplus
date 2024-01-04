@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title> تنفيذ دالة واحدة على جميع عناصر قائمة </title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+        
+            <h1>تنفيذ امر واحد على جميع عناصر قائمة</h1>
+            <p>في بعض الاحيان قد نحتاج الى تنفيذ دالة واحدة على جميع عناصر قائمة معينة 
+                وقد يكون عدد عناصر القائمة يتجاوز الالف !! هل سنكتب الف سطر ؟؟ طبعا لا يوجد امر موجود في لغة عربي بلس
+                وهو <b>نفذ_جميع_عناصر</b> يمكنك من تنفيذ دالة واحدة على جميع عناصر القائمة
+                مهما كان عددها حتى لو كان ضخم جدا عبر سطرين !! اليك مثال
+            </p>
+            <pre><code class="code">س = [1 ,  2 , 3]
+نفذ_على_جميع_عناصر س :
+    اكتب(__عنصر__ + 1)</code></pre>
+            <p>سيتم كتابة جميع عناصر س بالترتيب مع جمع كل عنصر بواحد</p>
+            <p>حيث ان <b>__عنصر__</b> يمثل عنصر القائمة الذي يتم تنفيذ الاوامر عليه وعند الانتهاء
+            منه يتم الانتقال الى العنصر الذي يليه</p>
+            <p>ويمكن استخدام الامر <b>نفذ_على_عناصر</b> بدلا من <b>نفذ_على_جميع_عناصر</b> بدون مشاكل</p>
+            
+            <br>
+            <br>
+
+            <h1>استخدام الامر بعد_ذلك</h1>
+            <p>يتم تنفيذ الدوال الموجودة بعد هذا الامر بعد الانتهاء من الامر <b>نفذ_على_جميع_عناصر</b> اي عند الانتهاء من الدوران على 
+            جميع العناصر ،، مثال : </p>
+            <pre><code class="code">س = [1 ,  2 , 3]
+نفذ_على_جميع_عناصر س :
+    اكتب(__عنصر__ + 1)
+
+بعد_ذلك :
+    اكتب("انتهيت !!")</code></pre>
+
+            <br>
+            <br>
+
+            <p style="margin-right: 0;font-size: 0.6cm;">استخدام <b>ايقاف_الحلقة</b> و <b>اعادة_تشغيل_الحلقة</b></p>
+            <p>تم التحدث عنهم في <a href = "a_while_loop.html#breakElment">الدرس السابق</a></p>
+            <br>
+            <br>
+
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>
