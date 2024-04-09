@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>التعامل مع الاخطاء</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+        <style>.type{width: 45%;}</style>
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+        
+            <h1>جملة التجريب : </h1>
+            <p>هذه تاخذ عدة اوامر وتقوم بتشغيلها في حالة حدث خطأ لن يتم ايقاف الكود وسيتم تنفيذ دالة معينة بالشكل التالي</p>
+            <pre><code class = "code">جرب :
+    اكتب(س)
+
+عند_وقوع_خطا :
+    اكتب("حدث خطأ وتم تجاوزه")</code></pre>
+            <p>حيث في المثال السابق سيحدث خطأ سببه ان المتغير س غير موجود</p>
+
+
+            <br>
+            <br>
+
+            <h1>تنفيذ دالة عند عدم حدوث خطأ</h1>
+            <p>كما يمكن تنفيذ دالة او عدة دوال عند عدم حدوث اية اخطاء هكذا</p>
+            <pre><code class = "code">س  = 33
+جرب :
+    اكتب(س)
+
+عند_وقوع_خطا :
+    اكتب("حدث خطأ وتم تجاوزه")
+
+عند_عدم_وقوع_خطا : 
+    اكتب("لم يحدث اي خطأ")</code></pre>
+
+            <br>
+            <br>
+
+            <h1>الامر اظهار_الخطا</h1>
+            <p>يستخدم هذا الامر لاظهار خطأ معين بدون ان يكون هناك سبب لظهوره</p>
+            <pre><code class = "code"><b>اظهار_الخطا</b> خطا_في_بنية_الكود</code></pre>
+
+            
+
+            <br>
+            <br>
+
+            <h1>اهم انواع الاخطاء</h1>
+
+            <h2>خطا_في_بنية_الكود (Syntex Error)</h2>
+            <p>يحدث عندما نكتب جملة تكرارية شرطية او جملة تجريب او جملة شرطية بشكل خاطئ ، كأن لا نكتب : او ننسى اغلاق قوس معين 
+                لدالة معينة او نستعمل معامل غير موجود مع الجمل الشرطية
+            </p>
+                        <pre><code class = "code">س = 9
+اذا_كان س == 9
+    اكتب("=9")</code></pre>
+            <p>سيحدث خطأ سببه اننا لم نضع : اخر الجملة الشرطية</p>
+            
+
+            <br>
+
+            <h2>خطا_العنصر_غير_موجود (Name Error)</h2>
+            <p>يحدث عندما نستخدم دالة او متغير غير موجود ضمن الكود</p>
+            <pre><code class="code">اكتب(س)</code></pre>
+            <p>سيحدث خطأ سببه اننا لم نقم بتعريف المتغير س</p>
+
+            <br>
+
+            <h2>خطا_العنصر_خارج_المجموعة (Index Error)</h2>
+            <p>يحدث عندما نقوم باستخدام عنصر غير موجود في القائمة </p>
+            <pre><code class = "code">س = ["ا" , "ب"]
+اكتب(س [2])</code></pre>
+            <p>سيحدث خطأ في المثال السابق حيث لا يوجد اي عنصر في التمركز 2</p>
+
+            <br>
+
+            <h2>خطا_القسمة_على_صفر (Zero Division Error)</h2>
+            <p>يحدث هذا الخطأ عند تقسيم رقم على صفر</p>
+            <pre><code class="code">اكتب(9 / 0)</code></pre>
+            <p>سيحدث خاطأ عن التقسيم على صفر</p>
+
+            <br>
+
+            <h2>خطا_في_استخدام_الدالة</h2>
+            <p>يحدث عندما  نستخدم دالة بطريقة غير صحيحة فمثلا عند استخدام دالة تاخذ نص ونقوم باعطائها رقم
+                سيحدث هذا الخطأ
+            </p>
+
+
+            <br>
+            <br>
+
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

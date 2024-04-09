@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>عرض التعدادات في صفحة الويب</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية عرض التعدادات في الصفحة</p>
+            
+            <br>
+
+            <h1>الدالة اضافة_تعدادات</h1>
+            <p>تستخدم لاضافة تعدادات هكذا : </p>
+            <ul>
+                <li><p style="margin:0;">تعداد اول</p></li> <br>
+
+                <li><p style="margin:0;">تعداد ثاني</p></li> <br>
+
+                <li><p style="margin:0;">تعداد ثالث</p></li> <br>
+            </ul>
+
+            <p>وتستخدم هكذا</p>
+
+            <pre><code class="code">اضافة_تعدادات(العنوان = "اشهر لغات البرمجة" , التعدادات = ["بايثون" , "جافا" , "سي شارب" , "بي اتش بي"])</code></pre>
+
+            <p>النتيجة ستكون</p>
+            <h2>اشهر لغات البرمجة</h2>
+            <ul>
+                <li>بايثون</li><br>
+
+                <li>جافا</li><br>
+
+                <li>سي شارب</li><br>
+
+                <li>بي اتش بي</li><br>
+            </ul>
+
+            <br>
+
+            <h1>التحكم بخواص التعدادات</h1>
+            <h2>المظهر</h2>
+            <p>وهو مدخل يستخدم لتحديد خواص css للمظهر</p>
+            <pre><code class="code">اضافة_تعدادات(العنوان = "هنا العنوان" , المظهر = "كود سي اس اس")</code></pre>
+            <br>
+
+            <h2>الاتجاه</h2>
+            <p>يستخدم لتحديد اتجاه التعدادات يمين او منتصف ولا تدعم اليسار</p>
+
+            <br>
+
+            <h2>الحدث</h2>
+            <p>في حالة كنت تريد تنفيذ دالة معينة عندما يقوم المستخدم بالنقر على التعدادات نستخدم هذا المدخل 
+                لتحديد الدالة التي سيتم تنفيذها عند النقر
+            </p>
+            <pre><code class="code">انشاء_دالة_باسم عند_النقر() :
+    اضافة_نص("تم النقر على التعدادات")
+اضافة_تعدادات(العنوان = "اشهر اللغات"  , التعدادات = ["بايثون" , "جافا"] , الحدث = عند_النقر)</code></pre>
+            <p>طبعا يجب ان تكون الدالة المراد تنفيذها عند النقر على النص لا تاخذ اي متغيرات ويجب عند تحديد الدالة كتابة اسمها بدون اقواس او علامات تنصيص</p>
+            
+
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

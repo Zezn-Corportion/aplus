@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>استقبال البيانات من المستخدم</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <p style="margin-right: 0;">نتحدث اليوم عن كيفية استقبال البيانات من المستخدم</p>
+            
+            <br>
+
+            <h1>الدالة حقل_ادخال</h1>
+            <p>تستخدم لاستقبال البيانات من المستخدم وتظهر هذه الدالة مربع فيه مكان كتابة وتحته زر لارسال البيانات وبمجرد ضغط المستخدم على زر الارسال سيتم 
+                حفظ البيانات التي ادخلها المستخدم في متغير
+            </p>
+            <pre><code class="code">انشاء_دالة_باسم الصفحة_الرئيسية() :
+ن = حقل_ادخال()
+اضافة_نص(ن)</code></pre>
+            <p>حيث في المثال السابق بمجرد قيام المستخدم بالضغط على ارسال سيتم تخزين البيانات في 
+                المتغير ن وسيتم كتابتها بعد ذلك عبر الدالة اضافة_نص
+            </p>
+
+            <br>
+            <br>
+
+            <h1 id="go">التحكم بخصائص حقل الادخال</h1>
+
+            <br>
+
+            <h2>العنوان </h2>
+            <p>يستخدم هذا المدخل لتحديد عنوان للحقل</p>
+            <pre><code class="code">ن = حقل_ادخال(العنوان = "الاسم")</code></pre>
+
+            <br>
+
+            <h2>المحتوى </h2>
+            <p>يستخدم هذا المدخل لتحديد  المحتوى الذي سيكون مكتوب افتراضيا في الحقل</p>
+            <pre><code class="code">ن = حقل_ادخال(العنوان = "الاسم" , المحتوى = "خالد")</code></pre>
+
+            <br>
+
+            <h2>التلميح </h2>
+            <p>يستخدم هذا المدخل لتحديد نص معين يظهر بخط باهت على حقل الادخال</p>
+            <pre><code class="code">ن = حقل_ادخال(العنوان = "الاسم" , التلميح = "اكتب اسمك هنا")</code></pre>
+            <p>مثال</p>
+            <center><input placeholder="هذا هو التلميح"/></center>
+
+            <br>
+
+            <h2>الاكمال_التلقائي</h2>
+            <p>يستخدم هذا المدخل لتحديد كلمات او جمل معينة اذا كتب المستخدم جزء منها سيظهر له اكمال تلقائي بها</p>
+            <pre><code class="code">ن = حقل_ادخال(العنوان = "الاسم" , الاكمال التلقائي = ["خالد"  , "محمود" , "زياد" , "محمد"])</code></pre>
+            <p>سيكون الناتج كالتالي ، حاول كتابة احد الاسماء السابقة ولاحظ ماذا سيحدث</p>
+            <center><input id = "te2"></center>
+
+            <script>
+            
+                var articles_autocompletInput = document.getElementById("te2");
+                var articles_autocompletList = ["خالد"  , "محمود" , "زياد" , "محمد"];
+    
+                articles_autocompletInput.addEventListener("input", function() {
+                    var articles_autocompletInputValue = this.value.toLowerCase();
+                    var matches = [];
+    
+                    if (articles_autocompletInputValue.length > 0) {
+                        matches = articles_autocompletList.filter(function(articles_autocomplet) {
+                            return articles_autocomplet.toLowerCase().indexOf(articles_autocompletInputValue) !== -1;
+                        });
+                    }
+    
+                    this.setAttribute("autocomplete", "off");
+                    this.setAttribute("list", "articles_autocomplet-datalist");
+    
+                    var datalist = document.createElement("datalist");
+                    datalist.setAttribute("id", "articles_autocomplet-datalist");
+    
+                    matches.forEach(function(match) {
+                        var option = document.createElement("option");
+                        option.setAttribute("value", match);
+                        datalist.appendChild(option);
+                    });
+    
+                    var existingDatalist = document.getElementById("articles_autocomplet-datalist");
+                    
+                    if (existingDatalist) {
+                        existingDatalist.parentNode.removeChild(existingDatalist);
+                    }
+    
+                    document.body.appendChild(datalist);
+    
+                });
+    
+            </script>
+
+            <br>
+
+            <h2>نص_المساعدة</h2>
+            <p>يستخدم لاضافة نص باهت باللون الرمادي اسفل صندوق الكتابة للتلميح عن شي معين او اخبار المستخدم 
+                بشيئ معين 
+            </p>
+
+            <br>
+
+            <h2>النوع</h2>
+            <p>يستخدم هذا المدخل لتحديد نوع البيانات التي سيدخلها المستخدم وعليه يتم اظهار حقل مناسب لنوع البيانات 
+                مثل الارقام والنصوص وغير ذلك 
+            </p>
+            <p>والانواع المدعومة هي : <b>نص</b> , <b>رقم</b> , <b>كلمة مرور</b> , <b>لون</b> , <b>تاريخ</b> , <b>وقت</b> , <b>رقم عشري</b></p>
+            <pre><code class="code">ن = حقل_ادخال(النوع = "كلمة مرور")</code></pre>
+            
+            <br>
+
+            <h2>قابلية_الكتابة</h2>
+            <p>يستدخم هذا المدخل للتحكم ماذا كان المستخدم سيتمكن من الكتابة في الحقل ام لا ، في حالة تم اعطاءه القيمة |خطأ| لن يتمكن المستخدم من الكتابة في الحقل</p>
+            <pre><code class="code">ن = حقل_ادخال(المحتوى = "خالد" , قابلية_الكتابة = |خطأ|)</code></pre>
+            <p>حيث في المثال السابق لن يتمكن المستخدم من التعديل على المحتوى</p>
+
+
+            <br>
+
+            <h2>اجباري</h2>
+            <p>في حالة اعطاء هذا المدخل القيمة |صحيح| لن يتمكن المستخدم من الضغط على موافق وارسال البيانات الى الموقع اذا كان الحقل فارغا</p>
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

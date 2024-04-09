@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title> دوال الملفات في عربي بلس</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+        
+            <p style="margin-right: 0;">اليوم نتحدث عن الدوال التي تسخدم مع الملفات وهي كالتالي : </p>
+            
+            <h2>نص_الملف</h2>
+            <p>هذه الدالة تاخذ مسار ملف وتعيد لنا النص الموجود فيه</p>
+            <pre><code class="code">س = نص_الملف(__هنا__ + "s.txt")</code></pre>
+            <p>
+                حيث __هنا__ يشير الى المكان الذي يوجد فيه الكود
+            </p>
+
+            <br>
+
+            <h2>تعديل_ملف</h2>
+            <p>تستخدم هذه الدالة للتعديل على نص ملف معين وفي حالة كان الملف غير موجود سيتم  انشاءه والكتابه فيه</p>
+            <pre><code class="code">تعديل_ملف("e:/i.txt" , "هنا النص الجديد")</code></pre>
+
+            <br>
+
+            <h2>انشاء_ملف</h2>
+            <p>تستخدم هذه الدالة لانشاء ملف والكتابة فيه</p>
+            <pre><code class="code">انشاء_ملف("e:/i.txt" , "هنا النص الملف")</code></pre>
+
+            <br>
+
+            <h2>تغيير_الاسم</h2>
+            <p>تستخدم هذه الدالة لتغيير اسم ملف او مجلد معين</p>
+            <pre><code class="code">تغيير_الاسم(المسار_قبل = "d:/i.txt" , المسار_بعد = "d:/ooo.txt")</code></pre>
+
+            <br>
+
+            <h2>حذف_ملف</h2>
+            <p>تستخدم لحذف مجلد او ملف معين</p>
+            <pre><code class="code">حذف_ملف("e:/i.txt")</code></pre>
+
+            <br>
+
+            <h2>قائمة_الملفات</h2>
+            <p>هذه الدالة تاخذ مسار وتعيد قائمة باسماء الملفات والمجلدات في ذلك المسار</p>
+            <pre><code class="code">س = قائمة_الملفات("e:/")</code></pre>
+
+            <br>
+
+            <h2>نسخ_ملف</h2>
+            <p>تستخدم هذه الدالة لنسخ ملف من مكان الى اخر</p>
+            <pre><code class="code">نسخ_ملف(المسار_قبل = "e:/i.txt" , المسار_بعد = "d:/o.txt")</code></pre>
+
+            <br>
+
+            <h2>نسخ_مجلد</h2>
+            <p>تستخدم هذه الدالة لنسخ مجلد من مكان الى اخر</p>
+            <pre><code class="code">نسخ_مجلد(المسار_قبل = "e:/i" , المسار_بعد = "d:/o")</code></pre>
+
+            <br>
+
+            <h2>انشاء_المجلد</h2>
+            <p>تستخدم هذه الدالة لانشاء مجلد</p>
+            <pre><code class="code">انشاء_المجلد("e:/folderName")</code></pre>
+
+            <br>
+
+            <h2>استخراج_الاسم</h2>
+            <p>هذه الدالة تاخذ مسار ملف وتعيد اسمه ، مثال:</p>
+            <pre><code class="code">اكتب(
+    استخراج_الاسم("e:/i/dd/o.txt")        
+)</code></pre>
+            <p>سيتم كتابة o.txt</p>
+
+            <br>
+
+            <h2>استخراج_المسار</h2>
+            <p>هذه الدالة تاخذ مسار ملف وتعيد المسار بدون اسم الملف</p>
+                        <pre><code class="code">اكتب(
+    استخراج_المسار("e:/i/dd/o.txt")        
+)</code></pre>
+            <p>سيتم كتابة e:/i/dd</p>
+
+            <br>
+
+            <h2>عبارة_عن_مسار_حقيقي</h2>
+            <p>هذه الدالة تاخذ مسار ملف او مجلد وتتحقق ان كان موجودا او لا</p>
+            <pre><code class="code">اكتب(
+   عبارة_عن_مسار_حقيقي("e:/i.txt")       
+)</code></pre>
+            <p>اذا كان الملف موجود فسيتم اعادة |صحيح| غير ذلك سيتم اعادة |خاطئ|</p>
+
+            <br>
+            <br>
+
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>

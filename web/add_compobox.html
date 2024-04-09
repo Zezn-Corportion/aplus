@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "ar" lang="en">
+
+    <head>
+        <title>صناديق الاختيارات</title>
+
+        <meta charset = "utf-8"/>
+        <link rel="stylesheet" href="../style/style.css">
+        <meta name="theme-color" content="#00bfff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel = "icon" type = "image/png" href = "../img/icon.png"/>
+        <link rel = "shortcut" href = "../img/icon.png"/>    
+        <link rel = "apple-towch-icon" sizes="76x76" href = "../img/icon.png"/>
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body class="articleBody">
+
+        <header>A + + Language Documents</header>
+
+        <br>
+        <br>
+
+
+        <div class = "article">
+            
+            <h1>الدالة مربع_اختيارات</h1>
+            <p>تستخدم لاضافة مربع يحتوي على عدة اختيارات يختار بينهم المستخدم وتعيد الدالة الاختيار الذي اختاره المستخدم
+                ويوجد 3 انواع من الصناديق وهي :
+            </p>
+            <br>
+            <p>
+                <input type="radio"> النوع الدائري (دوائر)
+                <br>     <br>
+                <input type ="checkbox"> النوع المربع (مربع)
+                <br>     <br>
+                <select > <option>النوع المستطيل (مستطيل)</option></select>
+            </p>
+            <pre><code class="code">ن = مربع_اختيارات(الاختيارات  = ["الاختيار الاول" , "الثاني" , "الثالث"] , النوع = "دوائر")</code></pre>
+            <p>وعندما يتم النقر على ارسال سيتم اعادة الاختيار الذي اختاره المستخدم</p>
+
+            <br>
+            <br>
+
+            <h1>التحكم بالخواص</h1>
+
+            <p><b>العنوان</b> و <b>نص_المساعدة</b> و <b>اجباري</b> تم شرحهم في درس <a href="inputs.html#go">حقول الادخال</a></p>
+            
+            <br>
+
+            <h2>امكانية_تعدد_الاختيارات</h2>
+            <p>تستخدم للسماح للمستخدم باختيار اكثر من خيار ، وهي لا تعمل الا مع النوع المستطيل</p>
+            <pre><code class="code">ن = مربع_اختيارات( الاختيارات  = ["الاختيار الاول" , "الثاني" , "الثالث"] , النوع = "دوائر" , امكانية_تعدد_الاختيارات = |صحيح|)</code></pre>
+            
+            <br>
+
+            <h2>القيم_المختارة</h2>
+            <p>تستخدم لتحديد الاختيارات التي سيتم التاشير عليها افتراضيا وهي تعمل مع الدوائر والمستطيلات</p>
+            <pre><code class="code">ن = مربع_اختيارات( الاختيارات  = ["الاختيار الاول" , "الثاني" , "الثالث"] , النوع = "دوائر" , القيم_المختارة = "الثالث")</code></pre>
+            
+            <br>
+
+            <h2>النوع</h2>
+            <p>تستخدم لتحديد نوع صندوق الاختيارات وهو يقبل 3 قيم وهي : دوائر , مربعات , مستطيلات</p>
+            <br>
+            <br>
+            <center>
+                <h2>
+                    والحمد لله رب العالمين
+                </h2>
+            </center>
+
+            <br>
+            <br>
+
+        </div>
+
+
+
+        <br>
+        <br>
+
+
+
+        <footer>
+            <hr>
+            <br>
+            <h1 class="center">Zezn Software 2023</h1>
+            <br>
+            <br>
+        </footer>
+    </body>
+
+</html>
